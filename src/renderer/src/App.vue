@@ -4,12 +4,14 @@ import AddRecordView from './views/AddRecordView.vue'
 import RecordsView from './views/RecordsView.vue'
 import StatsView from './views/StatsView.vue'
 import SettingsView from './views/SettingsView.vue'
+import SnakeGameView from './views/SnakeGameView.vue'
 import ToastHost from './components/ToastHost.vue'
 
 const navItems = [
   { key: 'add', label: '记一笔', icon: '✏️' },
   { key: 'records', label: '明细', icon: '📋' },
   { key: 'stats', label: '统计', icon: '📊' },
+  { key: 'game', label: '小游戏', icon: '🎮' },
   { key: 'settings', label: '设置', icon: '⚙️' }
 ] as const
 
@@ -44,6 +46,7 @@ const active = ref<NavKey>('add')
       <AddRecordView v-if="active === 'add'" />
       <RecordsView v-else-if="active === 'records'" @goto-add="active = 'add'" />
       <StatsView v-else-if="active === 'stats'" />
+      <SnakeGameView v-else-if="active === 'game'" />
       <SettingsView v-else />
     </main>
 
