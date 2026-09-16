@@ -28,7 +28,7 @@ function createWindow(): void {
     minHeight: 620,
     show: false,
     autoHideMenuBar: true,
-    title: '黑马记账',
+    title: '记账APP',
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
@@ -88,7 +88,7 @@ app.whenReady().then(async () => {
     await initDb()
   } catch (err) {
     dialog.showErrorBox(
-      '黑马记账启动失败',
+      '记账APP启动失败',
       `无法初始化数据库：\n${err instanceof Error ? err.message : String(err)}`
     )
     app.quit()

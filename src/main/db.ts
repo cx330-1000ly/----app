@@ -431,7 +431,7 @@ export async function exportBackup(): Promise<ExportResult> {
   const stamp = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}`
   const { canceled, filePath } = await dialog.showSaveDialog({
     title: '导出数据备份',
-    defaultPath: `黑马记账数据备份-${stamp}.db`,
+    defaultPath: `记账APP数据备份-${stamp}.db`,
     filters: [{ name: '数据库备份文件', extensions: ['db'] }]
   })
   if (canceled || !filePath) return { canceled: true }

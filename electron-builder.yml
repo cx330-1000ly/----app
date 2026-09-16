@@ -1,5 +1,5 @@
 appId: com.heima.jizhang
-productName: 黑马记账
+productName: 记账APP
 directories:
   buildResources: build
 files:

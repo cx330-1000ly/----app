@@ -1,7 +1,7 @@
 {
   "name": "heima-jizhang",
   "version": "1.0.0",
-  "description": "黑马记账 —— 个人记账软件",
+  "description": "记账APP —— 个人记账软件",
   "main": "./out/main/index.js",
   "author": "example.com",
   "homepage": "https://electron-vite.org",

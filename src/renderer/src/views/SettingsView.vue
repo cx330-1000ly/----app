@@ -182,7 +182,7 @@ async function doExport(): Promise<void> {
     <!-- 关于 -->
     <div class="card section">
       <div class="section-title">关于</div>
-      <div class="section-sub">黑马记账 v1.0.0 · 运行于 Windows / macOS · 数据仅保存在本机</div>
+      <div class="section-sub">记账APP v1.0.0 · 运行于 Windows / macOS · 数据仅保存在本机</div>
     </div>
 
     <!-- 分类名称弹窗 -->

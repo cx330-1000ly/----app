@@ -23,7 +23,7 @@ const active = ref<NavKey>('add')
     <aside class="sidebar">
       <div class="logo">
         <div class="logo-mark">¥</div>
-        <div class="logo-text">黑马记账</div>
+        <div class="logo-text">记账APP</div>
       </div>
       <nav class="nav">
         <button
