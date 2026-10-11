@@ -4,7 +4,7 @@ import AddRecordView from './views/AddRecordView.vue'
 import RecordsView from './views/RecordsView.vue'
 import StatsView from './views/StatsView.vue'
 import SettingsView from './views/SettingsView.vue'
-import SnakeGameView from './views/SnakeGameView.vue'
+import GamesView from './views/GamesView.vue'
 import ToastHost from './components/ToastHost.vue'
 
 const navItems = [
@@ -46,7 +46,7 @@ const active = ref<NavKey>('add')
       <AddRecordView v-if="active === 'add'" />
       <RecordsView v-else-if="active === 'records'" @goto-add="active = 'add'" />
       <StatsView v-else-if="active === 'stats'" />
-      <SnakeGameView v-else-if="active === 'game'" />
+      <GamesView v-else-if="active === 'game'" />
       <SettingsView v-else />
     </main>
 
